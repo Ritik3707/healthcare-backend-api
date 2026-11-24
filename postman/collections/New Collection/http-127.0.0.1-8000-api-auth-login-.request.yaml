@@ -1,0 +1,21 @@
+$kind: http-request
+name: http://127.0.0.1:8000/api/auth/login/
+description: |-
+  Generated from cURL: curl --location 'http://127.0.0.1:8000/api/auth/login/' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "username": "ritik",
+      "password": "Ritik@12345"
+  }'
+url: "{{baseUrl}}/api/auth/login/"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "username": "ritik",
+        "password": "Ritik@12345"
+    }
+order: 1000
